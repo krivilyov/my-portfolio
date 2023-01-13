@@ -1,0 +1,21 @@
+$screen-small: "(max-width: 414px)";
+$screen-medium-tab: "(min-width: 415px) and (max-width: 768px)";
+$screen-medium: "(min-width: 769px) and (max-width: 1199px)";
+$screen-medium-up: "(min-width: 1200px) and (max-width: 1799px)";
+$screen-large: "(min-width: 1800px)";
+
+@function large($value) {
+	@return calc($value * 1.38px);
+}
+
+@function medium($value, $size: 1199) {
+	@return calc($value / $size * 100vw);
+}
+
+@function medium-tab($value, $size: 768) {
+	@return calc($value / $size * 100vw);
+}
+
+@function small($value, $size: 360) {
+	@return calc($value / $size * 100vw);
+}
