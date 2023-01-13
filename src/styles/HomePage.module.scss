@@ -1,0 +1,28 @@
+@import "./break_points.scss";
+
+.container {
+	height: 100vh;
+	overflow-x: hidden;
+}
+
+.wrapper {
+	position: relative;
+
+	@media #{$screen-large} {
+	}
+
+	@media #{$screen-medium-up} {
+		max-width: 1200px;
+		padding: 0 40px;
+		margin: 0 auto;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
