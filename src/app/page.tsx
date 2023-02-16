@@ -1,9 +1,5 @@
-import styles from "../styles/HomePage.module.scss";
+import HeroSection from "@/conponents/sections/HeroSection";
 
 export default function Home() {
-	return (
-		<div className={styles.container}>
-			<div className={styles.wrapper}></div>
-		</div>
-	);
+	return <HeroSection />;
 }

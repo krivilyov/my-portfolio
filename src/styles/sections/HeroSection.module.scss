@@ -1,20 +1,20 @@
-@import "./break_points.scss";
-
+@import "../break_points.scss";
 .container {
-	height: 100vh;
-	overflow-x: hidden;
+	background: #ecf0f1;
 }
 
 .wrapper {
-	position: relative;
-
 	@media #{$screen-large} {
+		max-width: large(1200);
+		padding: 0 large(40);
+		margin: 0 auto;
+		height: large(600);
 	}
 
 	@media #{$screen-medium-up} {
 		max-width: 1200px;
 		padding: 0 40px;
-		margin: 0 auto;
+		height: 600px;
 	}
 
 	@media #{$screen-medium} {

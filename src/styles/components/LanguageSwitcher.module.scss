@@ -1,0 +1,34 @@
+@import "../break_points.scss";
+
+.switcherContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@media #{$screen-large} {
+		width: large(70);
+		font-size: large(22);
+	}
+
+	@media #{$screen-medium-up} {
+		width: 70px;
+		font-size: 22px;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.switcherItem {
+	cursor: pointer;
+}
+
+.switcherItem.active {
+	color: #fc4b61;
+}

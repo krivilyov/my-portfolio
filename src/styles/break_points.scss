@@ -5,7 +5,7 @@ $screen-medium-up: "(min-width: 1200px) and (max-width: 1799px)";
 $screen-large: "(min-width: 1800px)";
 
 @function large($value) {
-	@return calc($value * 1.38px);
+	@return calc($value * 1.25px);
 }
 
 @function medium($value, $size: 1199) {
