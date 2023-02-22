@@ -4,6 +4,8 @@
 }
 
 .wrapper {
+	display: flex;
+
 	@media #{$screen-large} {
 		max-width: large(1200);
 		padding: 0 large(40);
@@ -15,6 +17,158 @@
 		max-width: 1200px;
 		padding: 0 40px;
 		height: 600px;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.col {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	@media #{$screen-large} {
+		width: 50%;
+		flex: 0 0 50%;
+		height: 100%;
+	}
+
+	@media #{$screen-medium-up} {
+		width: 50%;
+		flex: 0 0 50%;
+		height: 100%;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.quoteContainer {
+	position: relative;
+
+	@media #{$screen-large} {
+		width: large(478);
+	}
+
+	@media #{$screen-medium-up} {
+		width: 478px;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.quoteSimbol {
+	color: #d1d1d1;
+	position: absolute;
+
+	@media #{$screen-large} {
+		font-size: large(51);
+		line-height: large(30);
+		left: large(-17);
+		top: 0;
+		z-index: 0;
+	}
+
+	@media #{$screen-medium-up} {
+		font-size: 51px;
+		line-height: 30px;
+		left: -17px;
+		top: 0;
+		z-index: 0;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.quote {
+	color: #555;
+	position: relative;
+
+	@media #{$screen-large} {
+		font-size: large(20);
+		line-height: large(30);
+		margin-bottom: large(10);
+	}
+
+	@media #{$screen-medium-up} {
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 10px;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.quoteSignature {
+	color: #000;
+
+	@media #{$screen-large} {
+		text-align: right;
+		font-size: large(22);
+		line-height: large(30);
+		font-weight: 600;
+		margin-right: large(24);
+	}
+
+	@media #{$screen-medium-up} {
+		text-align: right;
+		font-size: 22px;
+		line-height: 30px;
+		font-weight: 600;
+		margin-right: 24px;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.table_catImg {
+	@media #{$screen-large} {
+		width: large(512);
+	}
+
+	@media #{$screen-medium-up} {
+		width: 512px;
 	}
 
 	@media #{$screen-medium} {
