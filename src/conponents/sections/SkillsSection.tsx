@@ -115,13 +115,8 @@ export default function SkillsSection() {
 						/>
 						<div className={styles.skillDescriptionContainer}>
 							<h4>Unix-подобные ОС</h4>
-							<div
-								className={`${styles.skillDescription} ${styles.skillDescriptionSmall}`}
-							>
-								Более полутора лет использования таких дистрибутивов, как:
-								Ubuntu, Gnome, KDE. Остальную часть времени использую ОС Windows
-								и MacOS, так как предпочитаю решать бизнес-задачи, а не бороться
-								с инструментами
+							<div className={styles.skillDescription}>
+								В работе в основном использую MacOS и Windows.
 							</div>
 						</div>
 					</div>

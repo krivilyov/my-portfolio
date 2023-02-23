@@ -9,13 +9,13 @@
 
 	@media #{$screen-large} {
 		max-width: large(1200);
-		padding: large(90) large(40) large(80);
+		padding: large(90) large(40);
 		margin: 0 auto;
 	}
 
 	@media #{$screen-medium-up} {
 		max-width: 1200px;
-		padding: 90px 40px 80px;
+		padding: 90px 40px;
 		margin: 0 auto;
 	}
 
@@ -153,27 +153,6 @@
 
 	@media #{$screen-medium-up} {
 		font-size: 16px;
-		line-height: 20px;
-	}
-
-	@media #{$screen-medium} {
-	}
-
-	@media #{$screen-medium-tab} {
-	}
-
-	@media #{$screen-small} {
-	}
-}
-
-.skillDescriptionSmall {
-	@media #{$screen-large} {
-		font-size: large(12);
-		line-height: large(20);
-	}
-
-	@media #{$screen-medium-up} {
-		font-size: 12px;
 		line-height: 20px;
 	}
 

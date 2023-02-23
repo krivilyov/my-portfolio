@@ -1,0 +1,332 @@
+@import "../break_points.scss";
+
+.wrapper {
+	@media #{$screen-large} {
+		max-width: large(1200);
+		padding: large(80) large(40);
+		margin: 0 auto;
+	}
+
+	@media #{$screen-medium-up} {
+		max-width: 1200px;
+		padding: 80px 40px;
+		margin: 0 auto;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.sectionTitle {
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+
+	@media #{$screen-large} {
+		font-size: large(32);
+		line-height: large(42);
+		margin: 0 0 large(120);
+	}
+
+	@media #{$screen-medium-up} {
+		font-size: 32px;
+		line-height: 42px;
+		margin: 0 0 120px;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.mainEducationContainer {
+	display: flex;
+
+	@media #{$screen-large} {
+		margin: 0 large(-15) large(160);
+	}
+
+	@media #{$screen-medium-up} {
+		margin: 0 -15px 160px;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.educationItem {
+	position: relative;
+	border: 1px solid #c4c4c4;
+
+	@media #{$screen-large} {
+		width: large(370);
+		margin: 0 large(15);
+		padding: large(65) large(10) large(65);
+		border-radius: large(3);
+	}
+
+	@media #{$screen-medium-up} {
+		width: 370px;
+		margin: 0 15px;
+		padding: 65px 10px 65px;
+		border-radius: 3px;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.educationIcon {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+
+	@media #{$screen-large} {
+		top: large(-42);
+	}
+
+	@media #{$screen-medium-up} {
+		top: -42px;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.title {
+	text-align: center;
+	font-weight: 600;
+	color: #000;
+
+	@media #{$screen-large} {
+		font-size: large(18);
+		line-height: large(24);
+		margin-bottom: large(8);
+	}
+
+	@media #{$screen-medium-up} {
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 8px;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.subTitle {
+	text-align: center;
+	font-weight: 400;
+
+	@media #{$screen-large} {
+		font-size: large(12);
+		line-height: large(20);
+		margin-bottom: large(8);
+	}
+
+	@media #{$screen-medium-up} {
+		font-size: 12px;
+		line-height: 20px;
+		margin-bottom: 8px;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.description {
+	text-align: center;
+	font-weight: 400;
+
+	@media #{$screen-large} {
+		font-size: large(12);
+		line-height: large(20);
+	}
+
+	@media #{$screen-medium-up} {
+		font-size: 12px;
+		line-height: 20px;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.addEducationContainer {
+	display: flex;
+
+	@media #{$screen-large} {
+		margin: 0 large(-15);
+	}
+
+	@media #{$screen-medium-up} {
+		margin: 0 -15px;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.addEducationItem {
+	position: relative;
+	border: 1px solid #c4c4c4;
+
+	@media #{$screen-large} {
+		width: large(370);
+		margin: 0 large(15);
+		padding: large(65) large(10) large(65);
+		border-radius: 3px;
+	}
+
+	@media #{$screen-medium-up} {
+		width: 370px;
+		margin: 0 15px;
+		padding: 65px 10px 65px;
+		border-radius: 3px;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.addEducationIconContainer {
+	position: absolute;
+	background: #ecf0f1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	left: 0;
+	right: 0;
+	margin: auto;
+
+	@media #{$screen-large} {
+		width: large(178);
+		height: large(58);
+		top: large(-30);
+	}
+
+	@media #{$screen-medium-up} {
+		width: 178px;
+		height: 58px;
+		top: -30px;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.addEducationIcon {
+	height: auto;
+
+	@media #{$screen-large} {
+		width: large(146);
+	}
+
+	@media #{$screen-medium-up} {
+		width: 146px;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.learningPeriod {
+	text-align: center;
+
+	@media #{$screen-large} {
+		font-size: large(14);
+		line-height: large(24);
+		margin: large(20) 0;
+	}
+
+	@media #{$screen-medium-up} {
+		font-size: 14px;
+		line-height: 24px;
+		margin: 20px 0;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.bold {
+	font-weight: 600;
+}
