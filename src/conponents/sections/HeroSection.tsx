@@ -29,6 +29,7 @@ export default function HeroSection() {
 						className={styles.table_catImg}
 						alt="Programming space"
 						src={table_cat}
+						priority={true}
 					/>
 				</div>
 			</div>

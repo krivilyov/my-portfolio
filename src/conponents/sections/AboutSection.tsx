@@ -5,7 +5,11 @@ import vk_logo from "./imgs/vk_logo.svg";
 import facebook_logo from "./imgs/facebook_logo.svg";
 import github_logo from "./imgs/github_logo.svg";
 import habr_career_logo from "./imgs/habr_career_logo.svg";
-import AboutChart from "@/conponents/charts/about-chart/AboutChart";
+import dynamic from "next/dynamic";
+const AboutChart = dynamic(
+	() => import("@/conponents/charts/about-chart/AboutChart"),
+	{ ssr: false }
+);
 
 import styles from "@/styles/sections/AboutSection.module.scss";
 
