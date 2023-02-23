@@ -12,6 +12,7 @@
 	@media #{$screen-medium-up} {
 		max-width: 1200px;
 		padding: 80px 40px 60px;
+		margin: 0 auto;
 	}
 
 	@media #{$screen-medium} {
@@ -199,15 +200,15 @@
 	color: #555;
 
 	@media #{$screen-large} {
-		font-size: large(20);
-		line-height: large(30);
+		font-size: large(16);
+		line-height: large(26);
 		width: large(560);
 		margin: 0 auto large(30);
 	}
 
 	@media #{$screen-medium-up} {
-		font-size: 20px;
-		line-height: 30px;
+		font-size: 16px;
+		line-height: 26px;
 		width: 560px;
 		margin: 0 auto 30px;
 	}

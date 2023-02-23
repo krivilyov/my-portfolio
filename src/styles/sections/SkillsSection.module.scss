@@ -9,15 +9,13 @@
 
 	@media #{$screen-large} {
 		max-width: large(1200);
-		padding: 0 large(40);
+		padding: large(90) large(40) large(80);
 		margin: 0 auto;
-		height: large(600);
 	}
 
 	@media #{$screen-medium-up} {
 		max-width: 1200px;
-		padding: 0 40px;
-		height: 600px;
+		padding: 90px 40px 80px;
 		margin: 0 auto;
 	}
 
@@ -31,19 +29,17 @@
 	}
 }
 
-.col {
+.skillsContainer {
 	display: flex;
-	align-items: center;
+	flex-wrap: wrap;
 	justify-content: center;
 
 	@media #{$screen-large} {
-		width: 50%;
-		flex: 0 0 50%;
+		margin: 0 large(-15);
 	}
 
 	@media #{$screen-medium-up} {
-		width: 50%;
-		flex: 0 0 50%;
+		margin: 0 -15px;
 	}
 
 	@media #{$screen-medium} {
@@ -56,15 +52,21 @@
 	}
 }
 
-.quoteContainer {
-	position: relative;
+.skill {
+	display: flex;
+	background: #fff;
+	box-sizing: border-box;
 
 	@media #{$screen-large} {
-		width: large(478);
+		margin: large(10) large(15);
+		width: large(545);
+		padding: large(30) large(45);
 	}
 
 	@media #{$screen-medium-up} {
-		width: 478px;
+		margin: 10px 15px;
+		width: 545px;
+		padding: 30px 45px;
 	}
 
 	@media #{$screen-medium} {
@@ -77,24 +79,15 @@
 	}
 }
 
-.quoteSimbol {
-	color: #d1d1d1;
-	position: absolute;
-
+.skillImg {
 	@media #{$screen-large} {
-		font-size: large(51);
-		line-height: large(30);
-		left: large(-17);
-		top: 0;
-		z-index: 0;
+		width: large(100);
+		height: large(100);
 	}
 
 	@media #{$screen-medium-up} {
-		font-size: 51px;
-		line-height: 30px;
-		left: -17px;
-		top: 0;
-		z-index: 0;
+		width: 100px;
+		height: 100px;
 	}
 
 	@media #{$screen-medium} {
@@ -107,20 +100,60 @@
 	}
 }
 
-.quote {
+.skillDescriptionContainer {
+	@media #{$screen-large} {
+		padding: 0 0 0 large(20);
+	}
+
+	@media #{$screen-medium-up} {
+		padding: 0 0 0 20px;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+
+	h4 {
+		@media #{$screen-large} {
+			font-size: large(22);
+			line-height: large(28);
+			margin: 0 0 large(10) 0;
+		}
+
+		@media #{$screen-medium-up} {
+			font-size: 22px;
+			line-height: 28px;
+			margin: 0 0 10px 0;
+		}
+
+		@media #{$screen-medium} {
+		}
+
+		@media #{$screen-medium-tab} {
+		}
+
+		@media #{$screen-small} {
+		}
+	}
+}
+
+.skillDescription {
 	color: #555;
-	position: relative;
+	font-weight: 400;
 
 	@media #{$screen-large} {
-		font-size: large(20);
-		line-height: large(30);
-		margin-bottom: large(10);
+		font-size: large(16);
+		line-height: large(20);
 	}
 
 	@media #{$screen-medium-up} {
-		font-size: 20px;
-		line-height: 30px;
-		margin-bottom: 10px;
+		font-size: 16px;
+		line-height: 20px;
 	}
 
 	@media #{$screen-medium} {
@@ -133,44 +166,15 @@
 	}
 }
 
-.quoteSignature {
-	color: #000;
-
+.skillDescriptionSmall {
 	@media #{$screen-large} {
-		text-align: right;
-		font-size: large(22);
-		line-height: large(30);
-		font-weight: 600;
-		margin-right: large(24);
+		font-size: large(12);
+		line-height: large(20);
 	}
 
 	@media #{$screen-medium-up} {
-		text-align: right;
-		font-size: 22px;
-		line-height: 30px;
-		font-weight: 600;
-		margin-right: 24px;
-	}
-
-	@media #{$screen-medium} {
-	}
-
-	@media #{$screen-medium-tab} {
-	}
-
-	@media #{$screen-small} {
-	}
-}
-
-.table_catImg {
-	height: auto;
-
-	@media #{$screen-large} {
-		width: large(512);
-	}
-
-	@media #{$screen-medium-up} {
-		width: 512px;
+		font-size: 12px;
+		line-height: 20px;
 	}
 
 	@media #{$screen-medium} {
