@@ -1,0 +1,277 @@
+@import "../break_points.scss";
+
+.jobItem {
+	background: #fff;
+	box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.12);
+
+	@media #{$screen-large} {
+		border-radius: large(5);
+		padding: large(5) large(20);
+		margin-bottom: large(15);
+	}
+
+	@media #{$screen-medium-up} {
+		border-radius: 5px;
+		padding: 5px 20px;
+		margin-bottom: 15px;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.job {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	@media #{$screen-large} {
+		width: large(215);
+		height: large(54);
+		margin-left: large(-20);
+	}
+
+	@media #{$screen-medium-up} {
+		width: 215px;
+		height: 54px;
+		margin-left: -20px;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.period {
+	color: #000;
+
+	@media #{$screen-large} {
+		font-size: large(14);
+		line-height: large(20);
+	}
+
+	@media #{$screen-medium-up} {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.technologies {
+	display: flex;
+	color: #555;
+
+	@media #{$screen-large} {
+		font-size: large(10);
+		line-height: large(20);
+		width: large(370);
+	}
+
+	@media #{$screen-medium-up} {
+		font-size: 10px;
+		line-height: 20px;
+		width: 370px;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+
+	li {
+		position: relative;
+		white-space: nowrap;
+
+		@media #{$screen-large} {
+			margin: 0 large(6);
+		}
+
+		@media #{$screen-medium-up} {
+			margin: 0 6px;
+		}
+
+		@media #{$screen-medium} {
+		}
+
+		@media #{$screen-medium-tab} {
+		}
+
+		@media #{$screen-small} {
+		}
+
+		&:before {
+			content: "";
+			position: absolute;
+			background: #555;
+			border-radius: 50%;
+
+			@media #{$screen-large} {
+				width: large(4);
+				height: large(4);
+				left: large(-8);
+				top: large(8);
+			}
+
+			@media #{$screen-medium-up} {
+				width: 4px;
+				height: 4px;
+				left: -8px;
+				top: 8px;
+			}
+
+			@media #{$screen-medium} {
+			}
+
+			@media #{$screen-medium-tab} {
+			}
+
+			@media #{$screen-small} {
+			}
+		}
+	}
+}
+
+.plusminus {
+	position: relative;
+	cursor: pointer;
+
+	@media #{$screen-large} {
+		width: large(20);
+		height: large(20);
+	}
+
+	@media #{$screen-medium-up} {
+		width: 20px;
+		height: 20px;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+
+	span {
+		&:nth-child(1) {
+			display: block;
+			position: absolute;
+			margin: 0 10%;
+			width: 80%;
+			height: 2px;
+			border-radius: 3px;
+			background: #000;
+			/*- half the height*/
+			top: calc(50% - 1px);
+			-moz-transition: all 0.25s ease;
+			-webkit-transition: all 0.25s ease;
+			-o-transition: all 0.25s ease;
+			transition: all 0.25s ease;
+		}
+
+		&:nth-child(2) {
+			display: block;
+			position: absolute;
+			margin: 10% 0;
+			width: 2px;
+			height: 80%;
+			border-radius: 3px;
+			background: #000;
+			/*- half the width*/
+			left: calc(50% - 1px);
+			-moz-transition: all 0.25s ease;
+			-webkit-transition: all 0.25s ease;
+			-o-transition: all 0.25s ease;
+			transition: all 0.25s ease;
+		}
+	}
+}
+
+.jobDescriptionContainer {
+	opacity: 0;
+	max-height: 0;
+	overflow: hidden;
+	transition: opacity 200ms linear, max-height 200ms linear;
+	will-change: opacity, max-height;
+
+	@media #{$screen-large} {
+		font-size: large(16);
+		line-height: large(24);
+	}
+
+	@media #{$screen-medium-up} {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.jobDescription {
+	@media #{$screen-large} {
+		padding: large(20) 0;
+	}
+
+	@media #{$screen-medium-up} {
+		padding: 20px 0;
+	}
+
+	@media #{$screen-medium} {
+	}
+
+	@media #{$screen-medium-tab} {
+	}
+
+	@media #{$screen-small} {
+	}
+}
+
+.jobItemOpen {
+	.jobDescriptionContainer {
+		opacity: 1;
+		max-height: 9em;
+		transition: all 200ms linear;
+		will-change: opacity, max-height;
+	}
+
+	.plusminus span:nth-child(2) {
+		-moz-transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+		-o-transform: rotate(-90deg);
+		transform: rotate(-90deg);
+	}
+}
