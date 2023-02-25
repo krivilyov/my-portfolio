@@ -4,7 +4,7 @@ import { jobs } from "@/mocks/data";
 
 import styles from "@/styles/sections/JobsSection.module.scss";
 
-const font_Poppins = Poppins({ weight: "400", preload: false });
+const font_Poppins = Poppins({ weight: "600", preload: false });
 
 export default function JobsSection() {
 	return (

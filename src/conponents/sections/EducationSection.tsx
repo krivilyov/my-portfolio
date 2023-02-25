@@ -8,7 +8,7 @@ import skyeng_icon from "./imgs/skyeng_icon.png";
 
 import styles from "@/styles/sections/EducationSection.module.scss";
 
-const font_Poppins = Poppins({ weight: "400", preload: false });
+const font_Poppins = Poppins({ weight: "600", preload: false });
 
 export default function EducationSection() {
 	return (
